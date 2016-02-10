@@ -1,0 +1,37 @@
+﻿
+<div class="row">
+    <div class="col-md-6">
+        <h2>Postcode Finder</h2>
+        <form class="form">
+            <div class="form-group">
+                <label>Postcode:</label>
+                <input type="text" id="postcode" class="form-control" placeholder="Postcode (e.g. EH125PD)" required />
+            </div>
+            <div class="form-group">
+                <label>Distance in metres:</label>
+                <input type="text" id="distance" class="form-control" placeholder="Distance (e.g. 300)" required />
+            </div>
+            <button data-load class="btn btn-default">Show nearby addresses</button>
+        </form>
+        <div class="panel">
+            <div class="panel-body">
+                <div id="googleMap" style="width:500px; height:400px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-body">
+                <table class="table" id="resultTable">
+                    <thead>
+                        <tr>
+                            <th>Postcode</th>
+                            <th>Address</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
